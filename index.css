@@ -1,0 +1,561 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #000;
+  background: #fff;
+  overflow-x: hidden;
+  min-height: 100vh;
+  position: relative;
+  font-size: 16px; }
+
+.container {
+  max-width: 1266px;
+  width: 100%;
+  margin: 0 auto; }
+
+.btn {
+  font-size: 18px;
+  color: #fff;
+  background: #0072fe;
+  border-radius: 16px;
+  padding: 20px 25px;
+  font-weight: 600;
+  transition: 200ms ease all;
+  cursor: pointer;
+  border: none; }
+  .btn:hover {
+    background: #00469b; }
+
+.header {
+  padding: 105px 0;
+  background: url("./img/header-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .header h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0 0 40px;
+    text-align: center; }
+    .header h1 span {
+      color: #0072ff; }
+  .header__text {
+    max-width: 648px; }
+  .header__consult {
+    max-width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px 60px 25px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600; }
+    .header__consult .btn {
+      margin-top: 30px; }
+  .header .roman {
+    position: absolute;
+    width: 39.24%;
+    padding-bottom: 32.533%;
+    right: 10%;
+    bottom: 0; }
+    .header .roman img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover; }
+
+.text-b {
+  color: #0072ff; }
+
+.consult {
+  padding: 35px 0; }
+  .consult__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px; }
+  .consult__item {
+    text-align: center; }
+    .consult__item-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 25px 0 20px; }
+    .consult__item-desc {
+      font-weight: 500; }
+
+.faq {
+  padding: 40px 0;
+  background: url("./img/faq-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .faq__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px; }
+  .faq__item {
+    margin-bottom: 20px; }
+    .faq__item-title {
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #4b9cff;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 8px;
+      padding: 16px 10px 16px 25px;
+      cursor: pointer;
+      transition: 200ms ease all; }
+      .faq__item-title .up-arrow {
+        display: none; }
+      .faq__item-title img {
+        margin-left: 20px; }
+      .faq__item-title:hover {
+        background: #2f629f; }
+      .faq__item-title--active {
+        background: #fff;
+        color: #000; }
+        .faq__item-title--active .down-arrow {
+          display: none; }
+        .faq__item-title--active .up-arrow {
+          display: block; }
+        .faq__item-title--active:hover {
+          background: #fff; }
+    .faq__item-answer {
+      margin-top: 20px;
+      font-size: 14px;
+      padding-left: 25px;
+      font-weight: 500;
+      display: none; }
+
+.title {
+  margin: 0 0 40px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center; }
+
+.main-info {
+  padding: 40px 0; }
+  .main-info__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .main-info__video {
+    width: 49%;
+    margin-right: 40px;
+    position: relative;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .main-info__video .video-holder {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover; }
+    .main-info__video .play-video {
+      position: absolute;
+      z-index: 2;
+      transition: 200ms ease all; }
+      .main-info__video .play-video:hover {
+        transform: scale(1.1); }
+    .main-info__video iframe {
+      width: 100%;
+      height: 100%;
+      display: none; }
+  .main-info__text {
+    flex: 1; }
+  .main-info__name {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px; }
+  .main-info__post {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 35px; }
+  .main-info__list-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700; }
+  .main-info__list {
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 20px; }
+    .main-info__list--num {
+      list-style: none;
+      padding-left: 15px; }
+      .main-info__list--num ul {
+        list-style: none;
+        padding-left: 15px; }
+
+.reviews {
+  padding: 40px 0;
+  background: url("./img/reviews-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .reviews__slider {
+    overflow: hidden; }
+  .reviews__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px; }
+    .reviews__slide img {
+      width: 100%; }
+  .reviews .pagination {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 0; }
+    .reviews .pagination .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: #0072ff;
+      opacity: 1; }
+    .reviews .pagination .swiper-pagination-bullet-active {
+      background: #000; }
+
+.certificates {
+  padding: 40px 0; }
+  .certificates__container {
+    padding: 0 75px;
+    position: relative; }
+  .certificates__slider {
+    overflow: hidden; }
+  .certificates__slide {
+    width: auto; }
+    .certificates__slide img {
+      height: 287px;
+      max-width: 100%;
+      object-fit: cover; }
+
+.arrow {
+  position: absolute;
+  top: calc(50% - 15px); }
+
+.prev {
+  left: 0; }
+
+.next {
+  right: 0; }
+
+.diploma {
+  padding: 40px 0;
+  background: url("./img/gramota-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .diploma__container {
+    padding: 0 75px;
+    position: relative; }
+  .diploma__slider {
+    overflow: hidden; }
+  .diploma__slide {
+    width: calc(20% - 30px); }
+    .diploma__slide img {
+      height: 276px; }
+
+.consult {
+  padding: 40px 0; }
+  .consult__container {
+    padding: 32px 50px 15px;
+    background: #fff;
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0px 0px 7px 7px rgba(34, 60, 80, 0.07); }
+  .consult__image {
+    position: absolute;
+    width: 46.051%;
+    padding-bottom: 43.207%;
+    bottom: 0;
+    right: 0; }
+    .consult__image img {
+      position: absolute;
+      object-fit: cover;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%; }
+  .consult__form {
+    max-width: 59%; }
+    .consult__form-title {
+      font-size: 48px;
+      font-weight: 800; }
+    .consult__form-desc {
+      margin: 20px 0 25px;
+      font-size: 18px;
+      font-weight: 600; }
+    .consult__form-note {
+      margin-top: 25px;
+      font-size: 12px;
+      max-width: 90%; }
+  .consult .btn {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px; }
+
+.form-group {
+  margin-bottom: 15px; }
+  .form-group__title {
+    font-size: 18px;
+    margin-bottom: 8px; }
+
+.input__field {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  padding: 18px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #fff;
+  box-shadow: 0px 0px 4px 4px rgba(34, 60, 80, 0.07);
+  width: 100%;
+  max-width: 310px; }
+  .input__field::placeholder {
+    color: #959595; }
+
+.footer {
+  padding: 40px 0;
+  background: url("./img/footer-bg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .footer__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px; }
+  .footer__link {
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline; }
+    .footer__link:hover {
+      text-decoration: none; }
+  .footer__socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px; }
+  .footer__main {
+    font-weight: 500;
+    line-height: 160%; }
+  .footer__line {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; }
+
+.modal {
+  background: #fff;
+  text-align: center;
+  padding: 40px 40px 25px;
+  max-width: 800px;
+  min-width: 800px;
+  position: relative;
+  border-radius: 16px; }
+  .modal--hidden {
+    display: none; }
+  .modal__close {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+  .modal__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 35px; }
+  .modal-form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; }
+  .modal .consult__form-submit {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; }
+  .modal .input__field {
+    max-width: 100%; }
+  .modal .modal__note {
+    font-size: 12px;
+    margin-top: 35px;
+    color: #7b7b7b; }
+    .modal .modal__note a {
+      text-decoration: underline; }
+      .modal .modal__note a:hover {
+        text-decoration: none; }
+  .modal-success {
+    display: none; }
+  .modal--success .modal-success {
+    display: block;
+    padding-bottom: 50px; }
+  .modal--success .modal__content {
+    display: none; }
+  .modal--success .modal__title {
+    margin: 35px 0; }
+
+@media (max-width: 1365px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px; } }
+@media (max-width: 1199px) {
+  .header h1 {
+    font-size: 35px;
+    margin-bottom: 20px; }
+
+  .header__consult {
+    font-size: 25px; }
+
+  .header .roman {
+    right: 1%; }
+
+  .consult__grid {
+    grid-template-columns: repeat(2, 1fr); }
+
+  .diploma__slide {
+    width: calc(25% - 30px); }
+
+  .consult__form-title {
+    font-size: 35px; } }
+@media (max-width: 989px) {
+  .header__text {
+    margin: 0 auto; }
+
+  .header {
+    padding-top: 50px;
+    padding-bottom: 0; }
+
+  .header .roman {
+    position: static;
+    padding: 0;
+    width: 100%;
+    text-align: center; }
+    .header .roman img {
+      position: static;
+      max-width: 60%; }
+
+  .diploma__slide {
+    width: calc(33.3% - 30px); }
+
+  .consult__form {
+    max-width: 100%; }
+
+  .consult__form-note {
+    max-width: 50%;
+    font-size: 10px; }
+
+  body {
+    font-size: 14px; }
+
+  .modal {
+    min-width: 100%;
+    max-width: 100%; } }
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 28px; }
+
+  .header__consult {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px; }
+
+  .btn {
+    font-size: 14px; }
+
+  .title {
+    font-size: 22px; }
+
+  .consult__grid {
+    grid-template-columns: repeat(1, 1fr); }
+
+  .consult__item img {
+    max-width: 80px; }
+  .consult__item .consult__item-title {
+    font-size: 16px;
+    margin: 15px 0; }
+
+  .faq__grid {
+    grid-template-columns: repeat(1, 1fr); }
+
+  .main-info__container {
+    flex-direction: column; }
+
+  .main-info__video {
+    width: 100%;
+    margin: 0 0 25px; }
+
+  .certificates__slide {
+    width: 100%;
+    text-align: center; }
+    .certificates__slide img {
+      height: 200px; }
+
+  .diploma__slide {
+    width: calc(50% - 30px); }
+    .diploma__slide img {
+      height: 200px; }
+
+  .consult__form-title {
+    font-size: 28px; }
+    .consult__form-title br {
+      display: none; }
+
+  .consult__container {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px; }
+
+  .modal {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .modal__title {
+    font-size: 22px; } }
+@media (max-width: 479px) {
+  .header h1 {
+    font-size: 22px; }
+
+  .title {
+    font-size: 18px; }
+
+  .header__consult {
+    padding: 15px;
+    font-size: 16px;
+    margin: 0;
+    max-width: 100%; }
+    .header__consult .btn {
+      font-size: 13px; }
+
+  .consult__item .consult__item-title {
+    font-size: 14px; }
+
+  .main-info__video {
+    height: 300px; }
+
+  .diploma__slide {
+    width: 100%;
+    text-align: center; }
+
+  .consult__image {
+    display: none; }
+
+  .consult__form-note {
+    max-width: 100%; }
+
+  .consult__form-title {
+    font-size: 22px; }
+
+  .arcticmodal-container_i2 {
+    padding: 0; } }
+
+/*# sourceMappingURL=index.css.map */
