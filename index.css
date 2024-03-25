@@ -65,6 +65,8 @@ body {
       left: 0;
       top: 0;
       object-fit: cover; }
+  .header .roman-mob {
+    display: none; }
 
 .text-b {
   color: #0072ff; }
@@ -232,7 +234,7 @@ body {
     .certificates__slide img {
       height: 287px;
       max-width: 100%;
-      object-fit: cover; }
+      object-fit: contain; }
 
 .arrow {
   position: absolute;
@@ -257,7 +259,8 @@ body {
   .diploma__slide {
     width: calc(20% - 30px); }
     .diploma__slide img {
-      height: 276px; }
+      height: 276px;
+      object-fit: contain; }
 
 .consult {
   padding: 40px 0; }
@@ -397,6 +400,20 @@ body {
   .modal--success .modal__title {
     margin: 35px 0; }
 
+.modal-politic {
+  padding-top: 50px;
+  text-align: left;
+  line-height: 150%; }
+  .modal-politic span {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px; }
+  .modal-politic a {
+    color: #00469b;
+    font-weight: 500;
+    text-decoration: underline; }
+
 @media (max-width: 1365px) {
   .container {
     padding-left: 15px;
@@ -426,16 +443,17 @@ body {
 
   .header {
     padding-top: 50px;
-    padding-bottom: 0; }
+    padding-bottom: 50px; }
 
   .header .roman {
-    position: static;
-    padding: 0;
-    width: 100%;
-    text-align: center; }
-    .header .roman img {
-      position: static;
-      max-width: 60%; }
+    display: none; }
+
+  .header .roman-mob {
+    display: flex;
+    max-width: 85%;
+    margin: 0 auto; }
+    .header .roman-mob img {
+      max-width: 100%; }
 
   .diploma__slide {
     width: calc(33.3% - 30px); }

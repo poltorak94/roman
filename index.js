@@ -83,7 +83,7 @@ $(document).ready(function () {
     var slider2 = new Swiper(".certificates__slider", {
         slidesPerView: "auto",
         spaceBetween: 30,
-        // freeMode: true,
+        loop: true,
         navigation: {
             nextEl: ".certificates .next",
             prevEl: ".certificates .prev",
@@ -92,12 +92,25 @@ $(document).ready(function () {
     var slider3 = new Swiper(".diploma__slider", {
         slidesPerView: "auto",
         spaceBetween: 30,
-        // freeMode: true,
+        loop: true,
         navigation: {
             nextEl: ".diploma .next",
             prevEl: ".diploma .prev",
         },
     });
+
+    // $(".consult__form-note a", ".footer-politic").on("click", function (e) {
+    //     e.preventDefault();
+    //     $(".modal-politic").trigger("open.modal");
+    // });
+
+    $(".consult__form-note a, .footer-politic, .modal__note a").on(
+        "click",
+        function (e) {
+            e.preventDefault();
+            $(".modal-politic").trigger("open.modal");
+        }
+    );
 
     Fancybox.bind("[data-fancybox]", {
         //
