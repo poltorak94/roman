@@ -99,11 +99,6 @@ $(document).ready(function () {
         },
     });
 
-    // $(".consult__form-note a", ".footer-politic").on("click", function (e) {
-    //     e.preventDefault();
-    //     $(".modal-politic").trigger("open.modal");
-    // });
-
     $(".consult__form-note a, .footer-politic, .modal__note a").on(
         "click",
         function (e) {
@@ -111,6 +106,11 @@ $(document).ready(function () {
             $(".modal-politic").trigger("open.modal");
         }
     );
+
+    $(".footer-oferta").on("click", function (e) {
+        e.preventDefault();
+        $(".modal-oferta").trigger("open.modal");
+    });
 
     Fancybox.bind("[data-fancybox]", {
         //

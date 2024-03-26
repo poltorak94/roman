@@ -400,16 +400,19 @@ body {
   .modal--success .modal__title {
     margin: 35px 0; }
 
-.modal-politic {
+.modal-politic,
+.modal-oferta {
   padding-top: 50px;
   text-align: left;
   line-height: 150%; }
-  .modal-politic span {
+  .modal-politic span,
+  .modal-oferta span {
     display: block;
     text-align: center;
     font-weight: 600;
     margin-bottom: 15px; }
-  .modal-politic a {
+  .modal-politic a,
+  .modal-oferta a {
     color: #00469b;
     font-weight: 500;
     text-decoration: underline; }
